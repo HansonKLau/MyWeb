@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hanson Lau — Computer Science student at UC Davis, instructor, tutor, karate practitioner, and developer.">
+    <meta name="author" content="Hanson Lau">
+    <meta name="theme-color" content="#0b0f12">
+
+    <meta property="og:title" content="Hanson Lau — Personal Website">
+    <meta property="og:description" content="Computer Science student at UC Davis. Instructor, tutor, karate practitioner, developer.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/Senior_photo.jpg">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Hanson Lau — Personal Website</title>
+</head>
+<body>
+    <a class="skip-link" href="#about">Skip to content</a>
+
+    <!-- animated background -->
+    <div class="bg-aurora" aria-hidden="true">
+        <span class="blob b1"></span>
+        <span class="blob b2"></span>
+        <span class="blob b3"></span>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- nav bar -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="#top" class="brand" aria-label="Hanson Lau home">
+                <span class="brand-dot" aria-hidden="true"></span>
+                <span class="brand-name">Hanson<span class="brand-accent">.</span>Lau</span>
+            </a>
+
+            <nav class="nav-links" aria-label="Primary">
+                <ul>
+                    <li><a href="#about" class="nav-link" data-target="about">About</a></li>
+                    <li><a href="#education" class="nav-link" data-target="education">Education</a></li>
+                    <li><a href="#experience" class="nav-link" data-target="experience">Experience</a></li>
+                    <li><a href="#projects" class="nav-link" data-target="projects">Projects</a></li>
+                    <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle color theme" title="Toggle theme">
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+
+                <button id="mobileMenu" class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+            <ul>
+                <li><a href="#about" class="mobile-link">About</a></li>
+                <li><a href="#education" class="mobile-link">Education</a></li>
+                <li><a href="#experience" class="mobile-link">Experience</a></li>
+                <li><a href="#projects" class="mobile-link">Projects</a></li>
+                <li><a href="#contact" class="mobile-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- hero -->
+    <section class="hero" id="top">
+        <div class="hero-inner">
+            <div class="hero-copy reveal">
+                <p class="eyebrow"><span class="pulse"></span> Available for internship opportunities</p>
+                <h1 class="hero-title">
+                    <span class="line">Hi, I'm <span class="gradient-text">Hanson Lau</span>.</span>
+                    <span class="line sub">Computer Science student,<br>instructor &amp; builder.</span>
+                </h1>
+                <p class="hero-sub">3rd-year at <strong>UC Davis</strong>, pursuing Computer Science. I teach kids to code, train in Matsubayashi Shorin-Ryu karate, and build things on the web.</p>
+
+                <div class="hero-ctas">
+                    <a class="btn btn-primary" href="#projects">
+                        See my work
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                    </a>
+                    <a class="btn btn-ghost" href="./assets/HansonLau-Resume.pdf" target="_blank" rel="noopener">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5M12 15V3"/></svg>
+                        Download résumé
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-num">3.896</span><span class="stat-label">UC GPA</span></div>
+                    <div class="stat"><span class="stat-num">8</span><span class="stat-label">AP courses</span></div>
+                    <div class="stat"><span class="stat-num">7+ mo</span><span class="stat-label">Teaching exp.</span></div>
+                    <div class="stat"><span class="stat-num">2nd-kyu</span><span class="stat-label">Brown belt</span></div>
+                </div>
+            </div>
+
+            <div class="hero-portrait reveal">
+                <div class="portrait-ring"></div>
+                <img src="./images/Senior_photo.jpg" alt="Portrait of Hanson Lau" loading="eager" width="420" height="520">
+                <div class="portrait-chip">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 7-8 12-8 12s-8-5-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Davis, CA
+                </div>
+            </div>
+        </div>
+
+        <a class="scroll-cue" href="#about" aria-label="Scroll to content">
+            <span></span>
+        </a>
+    </section>
+
+    <main>
+        <!-- about -->
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="section-head reveal">
+                <span class="section-tag">01 — About</span>
+                <h2 id="about-title" class="section-title">A quick intro</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>My name is <strong>Hanson Lau</strong> and I am a 3rd-year attending <strong>UC Davis</strong>, pursuing a Computer Science major. My primary language is English, but I also know conversational Cantonese (spoken at home).</p>
+                    <p>In my free time I like to practice karate, play badminton, and play video games with friends. I enjoy teaching, picking up new tools, and shipping small projects.</p>
+                </div>
+
+                <ul class="skills reveal" aria-label="Technical skills">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>HTML &amp; CSS</li>
+                    <li>Scratch</li>
+                    <li>PyGame</li>
+                    <li>Git</li>
+                    <li>Teaching</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- education -->
+        <section class="section" id="education" aria-labelledby="education-title">
+            <div class="section-head reveal">
+                <span class="section-tag">02 — Education</span>
+                <h2 id="education-title" class="section-title">Where I've studied</h2>
+                <p class="section-lede">Creekside Elementary → Diablo Vista Middle → Monte Vista High → <strong>UC Davis</strong>. 8 AP courses along the way.</p>
+            </div>
+
+            <div class="cards">
+                <article class="card reveal">
+                    <header class="card-head">
+                        <h3>University GPA</h3>
+                        <span class="card-badge card-badge-green">Current</span>
+                    </header>
+                    <p class="big-number">3.896</p>
+                    <p class="card-meta">UC Davis — Computer Science</p>
+                </article>
+
+                <article class="card reveal">
+                    <header class="card-head">
+                        <h3>High School GPA</h3>
+                        <span class="card-badge">Monte Vista HS</span>
+                    </header>
+                    <ul class="kv">
+                        <li><span>Cumulative Unweighted</span><strong>3.98</strong></li>
+                        <li><span>Cumulative Weighted</span><strong>4.39</strong></li>
+                        <li><span>Weighted (10–12)</span><strong>4.57</strong></li>
+                    </ul>
+                </article>
+
+                <article class="card reveal card-wide">
+                    <header class="card-head">
+                        <h3>AP Courses</h3>
+                        <span class="card-badge">8 total</span>
+                    </header>
+                    <ul class="chips">
+                        <li>Computer Science Principles</li>
+                        <li>Computer Science A</li>
+                        <li>Calculus AB</li>
+                        <li>Statistics</li>
+                        <li>Physics 2</li>
+                        <li>World History</li>
+                        <li>U.S. History</li>
+                        <li>Comparative Government</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="schools reveal" aria-label="Schools attended">
+                <a class="school school-cr" href="https://cres.srvusd.net/" target="_blank" rel="noopener">
+                    <span class="school-year">Elementary</span>
+                    <span class="school-name">Creekside</span>
+                </a>
+                <a class="school school-dv" href="https://dvms.srvusd.net/" target="_blank" rel="noopener">
+                    <span class="school-year">Middle</span>
+                    <span class="school-name">Diablo Vista</span>
+                </a>
+                <a class="school school-mv" href="https://mvhs.srvusd.net/" target="_blank" rel="noopener">
+                    <span class="school-year">High</span>
+                    <span class="school-name">Monte Vista</span>
+                </a>
+                <a class="school school-uc" href="https://www.ucdavis.edu/" target="_blank" rel="noopener">
+                    <span class="school-year">University</span>
+                    <span class="school-name">UC Davis</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- experience -->
+        <section class="section" id="experience" aria-labelledby="experience-title">
+            <div class="section-head reveal">
+                <span class="section-tag">03 — Experience</span>
+                <h2 id="experience-title" class="section-title">What I've been up to</h2>
+            </div>
+
+            <ol class="timeline">
+                <li class="t-item reveal">
+                    <div class="t-dot"></div>
+                    <div class="t-body">
+                        <div class="t-meta">
+                            <span class="t-role">Coding Instructor</span>
+                            <span class="t-org">Juni Learning</span>
+                            <span class="t-time">7 months</span>
+                        </div>
+                        <p>Provided 1:1 instruction to students aged 8–18, adapting lessons to their needs and interests. Taught courses in Scratch, Python, PyGame, and Java. Tracked skill progression and left summary notes after each session.</p>
+                        <ul class="t-tags"><li>Python</li><li>Java</li><li>PyGame</li><li>Scratch</li></ul>
+                    </div>
+                </li>
+
+                <li class="t-item reveal">
+                    <div class="t-dot"></div>
+                    <div class="t-body">
+                        <div class="t-meta">
+                            <span class="t-role">Teaching Assistant (Intern)</span>
+                            <span class="t-org">UC Berkeley ATDP</span>
+                            <span class="t-time">Two sessions</span>
+                        </div>
+                        <p>TA'd an intro Python course for middle-school students. Worked under two different instructors across the program's two cycles, helping students debug, think step by step, and get comfortable with coding.</p>
+                        <ul class="t-tags"><li>Python</li><li>Mentoring</li></ul>
+                    </div>
+                </li>
+
+                <li class="t-item reveal">
+                    <div class="t-dot"></div>
+                    <div class="t-body">
+                        <div class="t-meta">
+                            <span class="t-role">Private Tutor</span>
+                            <span class="t-org">UNICEF club → Independent</span>
+                            <span class="t-time">Volunteer → Paid</span>
+                        </div>
+                        <p>Volunteered through the UNICEF club tutoring a kindergartener in basics of math, comparisons, and sight words. Converted the relationship into an ongoing paid private tutoring arrangement.</p>
+                        <ul class="t-tags"><li>Early-ed</li><li>1:1</li></ul>
+                    </div>
+                </li>
+
+                <li class="t-item reveal">
+                    <div class="t-dot"></div>
+                    <div class="t-body">
+                        <div class="t-meta">
+                            <span class="t-role">Karate Practitioner</span>
+                            <span class="t-org">Matsubayashi Shorin-Ryu</span>
+                            <span class="t-time">Since freshman year of HS</span>
+                        </div>
+                        <p>Practicing Matsubayashi Shorin-Ryu karate since freshman year of high school. Currently a <strong>2nd-kyu brown belt</strong>, certified by Sensei Eihachi Ota, Hanshi, 10th Dan.</p>
+                        <ul class="t-tags"><li>Discipline</li><li>Kata</li></ul>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- projects -->
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="section-head reveal">
+                <span class="section-tag">04 — Projects</span>
+                <h2 id="projects-title" class="section-title">Things I've built</h2>
+                <p class="section-lede">A small sample. More living on <a class="inline-link" href="https://github.com/HansonLau" target="_blank" rel="noopener">GitHub</a>.</p>
+            </div>
+
+            <div class="projects">
+                <article class="project reveal">
+                    <a class="project-media" href="https://hansonlau.github.io/shorin-ryu/" target="_blank" rel="noopener" aria-label="Open Shorin-Ryu website">
+                        <img src="./images/karatePic.PNG" alt="Shorin-Ryu website preview" loading="lazy">
+                    </a>
+                    <div class="project-body">
+                        <div class="project-head">
+                            <h3>Matsubayashi Shorin-Ryu</h3>
+                            <ul class="t-tags"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+                        </div>
+                        <p>A website I built that showcases the katas and history of Matsubayashi Shorin-Ryu karate, with video embeds and kata breakdowns.</p>
+                        <div class="project-links">
+                            <a href="https://hansonlau.github.io/shorin-ryu/" target="_blank" rel="noopener">Live site
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project reveal">
+                    <a class="project-media" href="https://www.youtube.com/channel/UCz3DKTeS7mJY6sZfAX2L-Eg" target="_blank" rel="noopener" aria-label="Open YouTube channel">
+                        <img src="./images/hyt.PNG" alt="YouTube channel preview" loading="lazy">
+                    </a>
+                    <div class="project-body">
+                        <div class="project-head">
+                            <h3>YouTube Channel</h3>
+                            <ul class="t-tags"><li>Video</li><li>Karate</li></ul>
+                        </div>
+                        <p>My YouTube channel where I post kata demos, training clips, and the occasional project walkthrough.</p>
+                        <div class="project-links">
+                            <a href="https://www.youtube.com/channel/UCz3DKTeS7mJY6sZfAX2L-Eg" target="_blank" rel="noopener">Watch
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project reveal">
+                    <div class="project-media project-media-plain" aria-hidden="true">
+                        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-head">
+                            <h3>Résumé</h3>
+                            <ul class="t-tags"><li>PDF</li></ul>
+                        </div>
+                        <p>My up-to-date résumé — experience, coursework, skills, and extras. Grab the PDF or open it in a new tab.</p>
+                        <div class="project-links">
+                            <a href="./assets/HansonLau-Resume.pdf" target="_blank" rel="noopener">Open PDF
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="section" id="contact" aria-labelledby="contact-title">
+            <div class="section-head reveal">
+                <span class="section-tag">05 — Contact</span>
+                <h2 id="contact-title" class="section-title">Let's connect</h2>
+                <p class="section-lede">The easiest way to reach me is email. I also check GitHub and Instagram.</p>
+            </div>
+
+            <ul class="contact-grid reveal">
+                <li>
+                    <a class="contact-card" href="mailto:hansonlau7@gmail.com">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">hansonlau7@gmail.com</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="contact-card" href="https://github.com/HansonLau" target="_blank" rel="noopener">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.56v-2.02c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18.92-.26 1.9-.39 2.88-.39.98 0 1.96.13 2.88.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.35.78 1.06.78 2.13v3.16c0 .31.21.67.79.56A11.52 11.52 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5z"/></svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">HansonLau</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="contact-card" href="https://www.instagram.com/hammylau7/" target="_blank" rel="noopener">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">Instagram</span>
+                            <span class="contact-value">@hammylau7</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="contact-card" href="https://app.snapchat.com/web/deeplink/snapcode?username=chopchop6&type=SVG&size=240" target="_blank" rel="noopener">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c3.3 0 6 2.7 6 6v2.3c1.4.3 2.6 1 3.4 1.9.4.4.3 1-.2 1.3-1 .6-2.1 1-3.2 1.3-.3 1.1-.9 2.1-1.7 2.9.9.4 2 .7 3.1.8.5.1.8.6.6 1-1.1 2-3.4 3.3-6 3.5-.3.8-1.1 1.3-2 1.3h-.1c-.9 0-1.7-.5-2-1.3-2.6-.2-4.9-1.5-6-3.5-.2-.4.1-.9.6-1 1.1-.1 2.2-.4 3.1-.8-.8-.8-1.4-1.8-1.7-2.9-1.1-.3-2.2-.7-3.2-1.3-.5-.3-.6-.9-.2-1.3.8-.9 2-1.6 3.4-1.9V8c0-3.3 2.7-6 6-6z"/></svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">Snapchat</span>
+                            <span class="contact-value">chopchop6</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-brand">Hanson<span class="brand-accent">.</span>Lau</p>
+            <p class="footer-copy">© <span id="year"></span> Hanson Lau. Built with HTML, CSS &amp; a little JavaScript.</p>
+            <a class="back-top" href="#top" aria-label="Back to top">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+                Back to top
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
